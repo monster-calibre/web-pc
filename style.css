@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -91,7 +90,9 @@ nav {
   body {
     overflow-x: hidden;
   }
-
+  .logo h4 {
+    font-size: 14px;
+  }
   .burger {
     display: block;
     cursor: pointer;
