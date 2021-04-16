@@ -49,43 +49,6 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(6, 128, 67);
-    margin: 5px;
-  }
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .logo {
-    font-size: 12px;
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .nav-links {
-    position: absolute;
-    height: 0px;
-    right: 0px;
-    top: 53px;
-  }
-  .nav-links a {
-    color: tomato;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 600px) {
   /* menu scrol-bar tidak bisa digeser sumber stack overflow */
   body {
     overflow-x: hidden;
