@@ -6,10 +6,14 @@
 
 .banner {
   position: relative;
+  z-index: -1;
 }
 .banner img {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  z-index: -1;
 }
 nav {
   display: flex;
@@ -85,7 +89,6 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    z-index: -1;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
