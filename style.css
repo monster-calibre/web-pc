@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-.banner {
-  position: relative;
-  z-index: -1;
-}
-.banner img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 500px;
-  max-width: 100%;
-  border-bottom: 10px solid gray;
-}
 nav {
   display: flex;
   justify-content: space-around;
@@ -23,6 +11,10 @@ nav {
   font-family: sans-serif;
   background-color: gray;
   min-height: 50px;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .logo {
@@ -60,6 +52,51 @@ nav {
   transition: all 0.5s ease;
 }
 
+.banner {
+  position: relative;
+  z-index: -1;
+}
+.banner img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  border-bottom: 10px solid gray;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 3rem;
+}
+
+.content .author {
+  padding: 20px;
+  line-height: 25px;
+}
+
+.bahasa {
+  padding-left: 40px;
+}
+
+.bahasa ol {
+  padding: 10px;
+  line-height: 25px;
+  list-style: upper-greek;
+}
+
+.bahasa a {
+  text-decoration: none;
+  color: black;
+}
+
+.text p {
+  padding: 20px;
+  line-height: 25px;
+}
+
 @media screen and (max-width: 900px) {
   /* menu scrol-bar tidak bisa digeser sumber stack overflow */
   body {
@@ -86,7 +123,7 @@ nav {
     height: 90vh;
     right: 0px;
     top: 8vh;
-    background-color: rgba(128, 128, 128, 0.596);
+    background-color: rgba(128, 128, 128, 0.808);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +135,30 @@ nav {
   .nav-links a {
     color: mintcream;
   }
+}
+
+.tabel h2 {
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+.tabel table tr td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 1px;
+}
+
+.footer {
+  background-color: grey;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  width: 100%;
+  padding: 10px;
 }
 
 /* ini akan diaktifkan pakai javaScript */
